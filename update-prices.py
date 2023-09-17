@@ -1,9 +1,82 @@
-import accessCSV
+from accessFile import CSVClass, JSONClass
+import apiUniversalis as api
 import json
+import os
+import pandas as pd
+from datetime import datetime
 
-json_string = '{"itemID":2,"lastUploadTime":1694905759731,"listings":[{"lastReviewTime":1694888789,"pricePerUnit":44,"quantity":220,"stainID":0,"worldName":"Ragnarok","worldID":97,"creatorName":"","creatorID":null,"hq":false,"isCrafted":false,"listingID":"fc71a8ad09e974069bbcea4d5d84d0bef747c1497a69fdc7607af1d174610e75","materia":[],"onMannequin":false,"retainerCity":10,"retainerID":"a8711281d6be2492029df0a29c464d26ceb13873540433c1ef8e395b515482ae","retainerName":"Kizuna","sellerID":"f40d340e27179f0790d3156fd5a5f8a18b9c264ee5c18adea5a7f65fbabc15a9","total":9471},{"lastReviewTime":1694864366,"pricePerUnit":46,"quantity":4720,"stainID":0,"worldName":"Spriggan","worldID":85,"creatorName":"","creatorID":null,"hq":false,"isCrafted":false,"listingID":"85afb589b9364b629415066564250a753fc8a70a427822f0067acf15c34a7f51","materia":[],"onMannequin":false,"retainerCity":3,"retainerID":"6172976b1d73d6e2b7a04eacd3a4f128e41d5c532e53f68a381ed3ce399fb451","retainerName":"Tgb","sellerID":"ee597caeb34485742a633ae18c3c3f9126d1597716112c161025aa5f27d838dd","total":213108}],"recentHistory":[{"hq":false,"pricePerUnit":1,"quantity":639,"timestamp":1694903051,"onMannequin":false,"worldName":"Shiva","worldID":67,"buyerName":"Seline Yamato","total":639},{"hq":false,"pricePerUnit":63,"quantity":1000,"timestamp":1694901796,"onMannequin":false,"worldName":"Shiva","worldID":67,"buyerName":"Nephtyra Neith","total":63000}],"regionName":"Europe","currentAveragePrice":103319.664,"currentAveragePriceNQ":103319.664,"currentAveragePriceHQ":0,"regularSaleVelocity":61197.855,"nqSaleVelocity":61197.855,"hqSaleVelocity":0,"averagePrice":59.166668,"averagePriceNQ":59.166668,"averagePriceHQ":0,"minPrice":44,"minPriceNQ":44,"minPriceHQ":0,"maxPrice":944999999,"maxPriceNQ":944999999,"maxPriceHQ":0,"stackSizeHistogram":{"1":2,"2":1,"4":1,"10":4,"11":2,"32":1,"41":1,"47":1,"50":3,"62":1,"89":1,"99":3,"100":32,"150":1,"167":1,"199":1,"200":47,"220":1,"250":5,"293":1,"300":7,"340":1,"360":3,"375":1,"400":15,"440":1,"450":1,"458":1,"489":1,"499":1,"500":153,"538":1,"540":1,"550":1,"591":1,"600":4,"632":1,"700":3,"800":5,"850":1,"900":1,"999":2,"1000":164,"1001":1,"1032":1,"1160":1,"1200":11,"1280":6,"1320":2,"1326":1,"1500":4,"1569":1,"1620":1,"1700":1,"1760":1,"1900":1,"2000":34,"2100":1,"2145":1,"2222":1,"2400":1,"2499":1,"2500":8,"2522":1,"2640":2,"2682":1,"2721":1,"2880":1,"2927":1,"2999":2,"3000":18,"3018":1,"3500":5,"3640":1,"3694":1,"3960":1,"4000":1,"4166":1,"4320":2,"4400":1,"4560":1,"4720":41,"4840":1,"4900":1,"4999":14,"5000":8,"5045":1,"5520":1,"5555":1,"5760":1,"5999":4,"6000":14,"6300":1,"6480":1,"7920":1,"8000":2,"8640":1,"8744":1,"9000":1,"9004":1,"9028":1,"9443":1,"9861":1,"9999":14},"stackSizeHistogramNQ":{"1":2,"2":1,"4":1,"10":4,"11":2,"32":1,"41":1,"47":1,"50":3,"62":1,"89":1,"99":3,"100":32,"150":1,"167":1,"199":1,"200":47,"220":1,"250":5,"293":1,"300":7,"340":1,"360":3,"375":1,"400":15,"440":1,"450":1,"458":1,"489":1,"499":1,"500":153,"538":1,"540":1,"550":1,"591":1,"600":4,"632":1,"700":3,"800":5,"850":1,"900":1,"999":2,"1000":164,"1001":1,"1032":1,"1160":1,"1200":11,"1280":6,"1320":2,"1326":1,"1500":4,"1569":1,"1620":1,"1700":1,"1760":1,"1900":1,"2000":34,"2100":1,"2145":1,"2222":1,"2400":1,"2499":1,"2500":8,"2522":1,"2640":2,"2682":1,"2721":1,"2880":1,"2927":1,"2999":2,"3000":18,"3018":1,"3500":5,"3640":1,"3694":1,"3960":1,"4000":1,"4166":1,"4320":2,"4400":1,"4560":1,"4720":41,"4840":1,"4900":1,"4999":14,"5000":8,"5045":1,"5520":1,"5555":1,"5760":1,"5999":4,"6000":14,"6300":1,"6480":1,"7920":1,"8000":2,"8640":1,"8744":1,"9000":1,"9004":1,"9028":1,"9443":1,"9861":1,"9999":14},"stackSizeHistogramHQ":{},"worldUploadTimes":{"39":1694888962582,"71":1694900529219,"80":1694901715108,"83":1694905759731,"85":1694894961337,"97":1694896833995,"400":1694895946177,"401":1694893833239,"33":1694902779985,"36":1694893898494,"42":1694901860671,"56":1694903556200,"66":1694896261264,"67":1694904026377,"402":1694902678895,"403":1694905358643},"listingsCount":2,"recentHistoryCount":2,"unitsForSale":4940,"unitsSold":1639}'
+#%%     Global Constants
 
-json_object = json.loads(json_string)
+# Database identifier
+global dataDir
+dataDir = r'C:\Users\Martijn\Documents\Python\Funhouse\database'
+# Runtime identifier
+global gTimestamp
+now = datetime.now()
+gTimestamp = now.strftime("%Y%m%d-%H%M%S")
+# Item Properties identifier
+global gItemProperties
+gItemProperties = 'ItemProperties.json'
+# Pricing identifier
+global gPricingData
+gPricingData = 'PricingData.csv'
+# Ignore list identifier
+global gItemIgnore
+gItemIgnore = 'ItemIgnore.txt'
 
-with open(fr"C:\Users\Martijn\Documents\Python\Funhouse\database\item-test.json", 'w') as f:
-    json.dump(json_object, f, indent=4)
+# Boot database subdir
+global gRootDir
+gRootDir = fr'{dataDir}\\pricing-update-{gTimestamp}'
+os.mkdir(gRootDir)
+
+#%%     Functions
+def getPrices(url):
+    #retrieve data from universalis
+    request_object = api.marketBoardCurrentData(url)
+    #check status code
+
+    #log data
+    with open(fr"{gRootDir}\\_universalis-prices.json", 'w') as f:
+        json.dump(request_object.json(), f, indent=4)
+    return request_object
+
+def saveItemProps(data):
+    data["dirpath"] = gRootDir
+    ssRootname = data["rootname"]
+    data["rootname"] = f"{ssRootname}-before-{gTimestamp}"
+    JSONClass(data).savejson() 
+
+def savePricing(data):
+    data["dirpath"] = gRootDir
+    ssRootname = data["rootname"]
+    data["rootname"] = f"{ssRootname}-before-{gTimestamp}"
+    CSVClass(data).savetocsv()
+#%%     Load in pricing & itemID list
+# ItemProperties
+itemProps = JSONClass(os.path.join(dataDir,gItemProperties)).readjson()
+saveItemProps(itemProps)
+itemProps = itemProps["data"]
+
+# Pricing
+pricingData = CSVClass(os.path.join(dataDir,gPricingData)).readcsv()
+savePricing(pricingData)
+pricingData = pricingData["data"]
+
+# Set-up list of unique Pricing items
+lItems = pricingData["Item Name"].values.tolist()
+lItems = list(dict.fromkeys(lItems))
+lItems.sort()
+
+# Remove items on the ignore list
+itemIgnore = CSVClass(os.path.join(dataDir,gItemIgnore)).readcsv()
+itemIgnore = list(itemIgnore["data"])
+print(lItems)
+
+# Identify items with no ID
+
+
+# Update all prices with api
+getUrl = 'https://universalis.app/api/v2/Europe/2,3?listings=2&entries=2&noGst=1&hq=false&statsWithin=86000000&entriesWithin=86000000'
+getPrices(getUrl)
+
+#%%     Update spreadsheet pricing

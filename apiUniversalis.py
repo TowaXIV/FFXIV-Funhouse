@@ -1,6 +1,6 @@
 import requests
 
-"""
+r"""
 API Server
 
 GET, request data
@@ -13,6 +13,15 @@ Status codes (GET)
 403 - Insufficient permissions, access forbidden.
 404 - Data not found.
 503 - The server was not ready to handle the request.
+
+Default url chain:
+    https://universalis.app
+
+Path arguments:
+    .../<argument>/
+
+Query arguments:
+    .../<path>?<argument>=<value>&<argument>=<value>
 """
 
 def marketBoardCurrentData(url):
@@ -31,16 +40,15 @@ def marketBoardCurrentData(url):
     listings        | string, query. Number of listings to return per item (default: all).
     entries         | string, query. The number of recent history entries to return per item (default: 5).
     noGst           | string, query. If gil sales tax (GST) should not be factored in (default: false).
-    hq              | string, query. Filter for HQ listings and entires (default: true).
+    hq              | string, query. Filter for HQ listings and entires, false = NQ, true = HQ (default: blank).
     statsWithin     | string, query. The amount of time before now to calculate stats over, in milliseconds (default: 7 days).
     entriesWithin   | string, query. The amount of time before now to take entries within, in seconds. Negative values will be ignored.
     fields          | string, query. Comma separated list of fields that should be included in the response (default, all fields | example: listings.pricePerUnit).
     """
     response = requests.get(url)
-    if response.status_code == 200:
-        return response.json()
+    return response
 
 if __name__ == '__main__':
     response = requests.get("https://universalis.app/api/v2/Europe/2,3?listings=2&entries=2&noGst=1&statsWithin=86000000&entriesWithin=86000000&fields=listings.pricePerUnit%2CaveragePrice")
     print(response.status_code)
-    print(response.json())
+    print(type(response))
