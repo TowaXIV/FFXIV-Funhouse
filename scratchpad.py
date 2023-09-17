@@ -1,3 +1,3 @@
-import pandas as pd
-
-data = pd.read_csv(self.inputData, sep=';', skipinitialspace=True,)
+data = 10.0
+int(data)
+print(type(data))

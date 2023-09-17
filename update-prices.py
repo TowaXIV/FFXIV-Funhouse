@@ -114,7 +114,7 @@ def main():
     """
     This has a high load due to the API requests.
     Can be commented for testing/debugging with current prices in JSON.
-    
+    """
     for key, value in itemProps.items(): # fetch price for object
         price = getPrices(key,value["ID"])
         price = price["averagePrice"]
@@ -127,11 +127,24 @@ def main():
     #   save to root database
     with open(f"{dataDir}\\{gItemProperties}",'w') as f:
         json.dump(itemProps, f, indent=4)
-    """
-    #%%     Update spreadsheet pricing
-    # pricingData <-- Data to paste pricing to
-    # itemProps <-- Data with pricing to copy
     
+    #%%     Update spreadsheet pricing
+    #print(pricingData)
+    lItemIgnore = [x.lower() for x in lItemIgnore]
+    for row_index, row in pricingData.iterrows():
+        item = pricingData.at[row_index, 'Item Name'].lower()
+        print(item)
+        if item in lItemIgnore:
+            pass
+        else:
+            itemPrice = itemProps.get(item, {}).get('Price')
+            itemUpdate = itemProps.get(item, {}).get('LastUpdate')
+            pricingData.at[row_index, 'Price to buy'] = itemPrice
+            pricingData.at[row_index, 'Last Updated'] = itemUpdate
+            pricingData["Price to buy"] = pricingData["Price to buy"].astype('int')
+    #   save to database file
+    pricingData.to_csv(rf"{dataDir}\\{gPricingData}", sep=';',index=False)
+    print(pricingData)
 
 #%%     Main
 if __name__ == "__main__":
