@@ -28,17 +28,24 @@ gItemIgnore = 'ItemIgnore.csv'
 global gRootDir
 gRootDir = fr'{dataDir}\\pricing-update-{gTimestamp}'
 os.mkdir(gRootDir)
+# Boot database universalis prices subdir
+global gPricesDir
+gPricesDir = f"{gRootDir}\\_universalis-prices"
+os.mkdir(gPricesDir)
 
 #%%     Functions
-def getPrices(url):
-    #retrieve data from universalis
-    request_object = api.marketBoardCurrentData(url)
-    #check status code
+def getPrices(item,id):
+#   https://universalis.app/api/v2/Europe/2?listings=0&entries=0
+    region = 'Europe'
+    listings = 0
+    entries = 0
+    response = api.marketBoardCurrentData(
+        rf"https://universalis.app/api/v2/{region}/{id}?listings={listings}&entries={entries}")
 
     #log data
-    with open(fr"{gRootDir}\\_universalis-prices.json", 'w') as f:
-        json.dump(request_object.json(), f, indent=4)
-    return request_object
+    with open(fr"{gPricesDir}\\{item}.json", 'w') as f:
+        json.dump(response.json(), f, indent=4)
+    return response.json()
 
 def saveItemProps(data):
     data["dirpath"] = gRootDir
@@ -62,38 +69,70 @@ def listRemoveDuplicates(source,filter):
 
 def newIDListing(item):
     entry = {item:{"ID":"","Price":"","LastUpdate":""}}
-    pass
+    url = rf"https://xivapi.com/search?indexes=item&string={item}"
+    response, newItemID = api.itemIDSearch(url,item)
+    if response.status_code != 200:
+        print(f"Something went wrong fetching ID from XIVAPI, status code: {response.status_code}")
+    entry[item]["ID"] = newItemID["ID"]
+    with open(f"{gRootDir}\\_newItemID\\{item}.json",'w') as f: # save data for logging
+        json.dump(response.json(), f, indent=4)
+    return entry
+
 #%%     Load in pricing & itemID list
-# ItemProperties (database of items, ID, prices)
-itemProps = JSONClass(os.path.join(dataDir,gItemProperties)).readjson()
-saveItemProps(itemProps) #save backup in local database
-itemProps = itemProps["data"] #strip to only data
+def main():
+    # ItemProperties
+    itemProps = JSONClass(os.path.join(dataDir,gItemProperties)).readjson()
+    saveItemProps(itemProps) #save backup in local database
+    itemProps = itemProps["data"] #strip to only data
 
-# Pricing spreadsheet (Input -> update -> output)
-pricingData = CSVClass(os.path.join(dataDir,gPricingData)).readcsv()
-savePricing(pricingData) #save backup in local database
-pricingData = pricingData["data"] #strip to only data
+    # Pricing spreadsheet
+    pricingData = CSVClass(os.path.join(dataDir,gPricingData)).readcsv()
+    savePricing(pricingData) #save backup in local database
+    pricingData = pricingData["data"] #strip to only data
 
-# Set-up list of unique Pricing items
-lItems = pricingData["Item Name"].values.tolist()
-lItems = list(dict.fromkeys(lItems))
-lItems.sort()
+    # Set-up list of unique Pricing items
+    lItems = pricingData["Item Name"].values.tolist()
+    lItems = list(dict.fromkeys(lItems))
+    lItems.sort()
 
-# Remove items on the ignore list
-lItemIgnore = CSVClass(os.path.join(dataDir,gItemIgnore)).readcsv()
-lItemIgnore = lItemIgnore["data"]["Item Name"].values.tolist()
-lItems = listRemoveDuplicates(lItems,lItemIgnore)
+    # Remove items on the ignore list
+    lItemIgnore = CSVClass(os.path.join(dataDir,gItemIgnore)).readcsv()
+    lItemIgnore = lItemIgnore["data"]["Item Name"].values.tolist()
+    lItems = listRemoveDuplicates(lItems,lItemIgnore)
 
-# Identify items with no ID
-lItemPropsWithID = list(dict.fromkeys(itemProps))
-lItemsWithoutID = listRemoveDuplicates(lItems,lItemPropsWithID)
-for x in lItemsWithoutID:
-    newItem = newIDListing(x)
-    itemProps.update(newItem)
-print(itemProps)
+    # Identify items with no ID
+    lItemPropsWithID = list(dict.fromkeys(itemProps))
+    lItemsWithoutID = listRemoveDuplicates(lItems,lItemPropsWithID)
+    print(f"New items to include in databse: {lItemsWithoutID}")
+    if len(lItemsWithoutID) > 0: # check if all items have ID, skip if True
+        os.mkdir(f"{gRootDir}\\_newItemID")
+        for x in lItemsWithoutID:
+            newItem = newIDListing(x) # fetch ID with api
+            itemProps.update(newItem)
 
-# Update all prices with api
-getUrl = 'https://universalis.app/api/v2/Europe/2,3?listings=2&entries=2&noGst=1&hq=false&statsWithin=86000000&entriesWithin=86000000'
-getPrices(getUrl)
+    # Update all prices in itemProps with api
+    """
+    This has a high load due to the API requests.
+    Can be commented for testing/debugging with current prices in JSON.
+    
+    for key, value in itemProps.items(): # fetch price for object
+        price = getPrices(key,value["ID"])
+        price = price["averagePrice"]
+        rPrice = eval('price / 10')
+        rPrice = round(rPrice,0)
+        rPrice = int(eval('rPrice * 10'))
+        print(f"Current price for {key} (average): {price}, rounded: {rPrice}")
+        itemProps[key]["Price"] = rPrice
+        itemProps[key]["LastUpdate"] = gTimestamp
+    #   save to root database
+    with open(f"{dataDir}\\{gItemProperties}",'w') as f:
+        json.dump(itemProps, f, indent=4)
+    """
+    #%%     Update spreadsheet pricing
+    # pricingData <-- Data to paste pricing to
+    # itemProps <-- Data with pricing to copy
+    
 
-#%%     Update spreadsheet pricing
+#%%     Main
+if __name__ == "__main__":
+    main()

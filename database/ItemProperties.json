@@ -1,7 +1,117 @@
 {
-	"fire shard":{
-		"ID":2,
-		"Price":80,
-		"LastUpdate":"20230917-054920"
-	}
+    "fire shard": {
+        "ID": 2,
+        "Price": 60,
+        "LastUpdate": "20230917-235201"
+    },
+    "bamboo stick": {
+        "ID": 5365,
+        "Price": 1070,
+        "LastUpdate": "20230917-235201"
+    },
+    "bismuth ore": {
+        "ID": 36164,
+        "Price": 360,
+        "LastUpdate": "20230917-235201"
+    },
+    "carbon fiber": {
+        "ID": 5339,
+        "Price": 2490,
+        "LastUpdate": "20230917-235201"
+    },
+    "dark hempen cloth": {
+        "ID": 36208,
+        "Price": 1800,
+        "LastUpdate": "20230917-235201"
+    },
+    "doman iron ore": {
+        "ID": 19953,
+        "Price": 370,
+        "LastUpdate": "20230917-235201"
+    },
+    "glass fiber": {
+        "ID": 15649,
+        "Price": 5800,
+        "LastUpdate": "20230917-235201"
+    },
+    "granite": {
+        "ID": 7008,
+        "Price": 330,
+        "LastUpdate": "20230917-235201"
+    },
+    "high durium ingot": {
+        "ID": 36169,
+        "Price": 900,
+        "LastUpdate": "20230917-235201"
+    },
+    "larch lumber": {
+        "ID": 19926,
+        "Price": 1490,
+        "LastUpdate": "20230917-235201"
+    },
+    "larch log": {
+        "ID": 19931,
+        "Price": 480,
+        "LastUpdate": "20230917-235201"
+    },
+    "mortar": {
+        "ID": 7016,
+        "Price": 1080,
+        "LastUpdate": "20230917-235201"
+    },
+    "natron": {
+        "ID": 5522,
+        "Price": 860,
+        "LastUpdate": "20230917-235201"
+    },
+    "oroshigane ingot": {
+        "ID": 19943,
+        "Price": 2070,
+        "LastUpdate": "20230917-235201"
+    },
+    "pewter ingot": {
+        "ID": 36183,
+        "Price": 2050,
+        "LastUpdate": "20230917-235201"
+    },
+    "pewter ore": {
+        "ID": 36175,
+        "Price": 320,
+        "LastUpdate": "20230917-235201"
+    },
+    "potter's clay": {
+        "ID": 5513,
+        "Price": 330,
+        "LastUpdate": "20230917-235201"
+    },
+    "red pine log": {
+        "ID": 36192,
+        "Price": 360,
+        "LastUpdate": "20230917-235201"
+    },
+    "red pine lumber": {
+        "ID": 36198,
+        "Price": 2470,
+        "LastUpdate": "20230917-235201"
+    },
+    "roof tile": {
+        "ID": 7015,
+        "Price": 790,
+        "LastUpdate": "20230917-235201"
+    },
+    "silex": {
+        "ID": 5523,
+        "Price": 390,
+        "LastUpdate": "20230917-235201"
+    },
+    "straw": {
+        "ID": 5342,
+        "Price": 130,
+        "LastUpdate": "20230917-235201"
+    },
+    "tempered glass": {
+        "ID": 16908,
+        "Price": 14040,
+        "LastUpdate": "20230917-235201"
+    }
 }

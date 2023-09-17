@@ -23,7 +23,7 @@ Path arguments:
 Query arguments:
     .../<path>?<argument>=<value>&<argument>=<value>
 """
-
+#%% Universalis
 def marketBoardCurrentData(url):
     r"""
     GET - /api/v2/{worldDcRegion}/{itemIds}
@@ -48,7 +48,32 @@ def marketBoardCurrentData(url):
     response = requests.get(url)
     return response
 
+#%% XIVAPI
+def itemIDSearch(url,item):
+    r"""
+    https://xivapi.com/search?indexes=item&string=<item-name>
+    Not uppercase-sensitive. May yield more results than required.
+    Must match the query.
+    """
+    response = requests.get(url)
+    data = response.json()
+    def build_dict(seq,key):
+        return dict((d[key].lower(), dict(d, index=index)) for (index, d) in enumerate(seq))
+    
+    item_by_name = build_dict(data["Results"], key="Name")
+    item_info = item_by_name.get(item)
+    return response, item_info
+
 if __name__ == '__main__':
-    response = requests.get("https://universalis.app/api/v2/Europe/2,3?listings=2&entries=2&noGst=1&statsWithin=86000000&entriesWithin=86000000&fields=listings.pricePerUnit%2CaveragePrice")
-    print(response.status_code)
-    print(type(response))
+    #response = requests.get("https://universalis.app/api/v2/Europe/2,3?listings=2&entries=2&noGst=1&statsWithin=86000000&entriesWithin=86000000&fields=listings.pricePerUnit%2CaveragePrice")
+    #print(response.status_code)
+    #print(type(response))
+
+    response = requests.get("https://xivapi.com/search?indexes=item&string=granite")
+    data = response.json()
+    def build_dict(seq,key):
+        return dict((d[key].lower(), dict(d, index=index)) for (index, d) in enumerate(seq))
+    
+    item_by_name = build_dict(data["Results"], key="Name")
+    item_info = item_by_name.get("granite")
+    print(item_info)
