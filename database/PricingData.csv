@@ -43,7 +43,7 @@ Window;Craft;Red Pine Lumber;9;;0;8;80;640;640
 Window;MB;Red Pine Log;45;350;15750;;;0;15750
 Window;Craft;Pewter Ingot;9;;0;8;80;640;640
 Window;MB;Pewter Ore;45;300;13500;;;0;13500
-Window;Vendor;Tin ore;9;2;18;;;0;18
+Window;Vendor;Tin Ore;9;2;18;;;0;18
 Window;Craft;Tempered Glass;6;;0;14;80;1120;1120
 Window;MB;Glass Fiber;6;5000;30000;;;0;30000
 Window;MB;Carbon Fiber;6;2500;15000;;;0;15000
