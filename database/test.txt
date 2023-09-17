@@ -1,0 +1,9 @@
+Acquire,Name,Price to buy(items/crystals),Total
+Craft,Cobalt Rivets,,999
+Crystal,Fire Shard,70 ,5994
+Craft,Horn Glue,,1120
+Crystal,Ice Shard,70 ,8010
+Craft,Iron Nails,,999
+Craft,Mythril Plate,,900
+Craft,Steel Joint Plate,,1470
+Crystal,Water Shard,70 ,3360
