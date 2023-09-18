@@ -9,7 +9,7 @@ from datetime import datetime
 
 # Database identifier
 global dataDir
-dataDir = r'C:\Users\Martijn\Documents\Python\Funhouse\database'
+dataDir = r'C:\Python\FFXIV-Funhouse\database'
 # Runtime identifier
 global gTimestamp
 now = datetime.now()

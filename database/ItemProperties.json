@@ -1,112 +1,112 @@
 {
     "bamboo stick": {
         "ID": 5365,
-        "Price": 1070,
-        "LastUpdate": "20230918-013737"
+        "Price": 1060,
+        "LastUpdate": "20230918-021533"
     },
     "bismuth ore": {
         "ID": 36164,
         "Price": 360,
-        "LastUpdate": "20230918-013737"
+        "LastUpdate": "20230918-021533"
     },
     "carbon fiber": {
         "ID": 5339,
         "Price": 2500,
-        "LastUpdate": "20230918-013737"
+        "LastUpdate": "20230918-021533"
     },
     "dark hempen cloth": {
         "ID": 36208,
-        "Price": 1670,
-        "LastUpdate": "20230918-013737"
+        "Price": 1660,
+        "LastUpdate": "20230918-021533"
     },
     "doman iron ore": {
         "ID": 19953,
         "Price": 370,
-        "LastUpdate": "20230918-013737"
+        "LastUpdate": "20230918-021533"
     },
     "glass fiber": {
         "ID": 15649,
         "Price": 5790,
-        "LastUpdate": "20230918-013737"
+        "LastUpdate": "20230918-021533"
     },
     "granite": {
         "ID": 7008,
         "Price": 330,
-        "LastUpdate": "20230918-013737"
+        "LastUpdate": "20230918-021533"
     },
     "high durium ingot": {
         "ID": 36169,
-        "Price": 870,
-        "LastUpdate": "20230918-013737"
+        "Price": 860,
+        "LastUpdate": "20230918-021533"
     },
     "larch lumber": {
         "ID": 19926,
         "Price": 1480,
-        "LastUpdate": "20230918-013737"
+        "LastUpdate": "20230918-021533"
     },
     "larch log": {
         "ID": 19931,
         "Price": 480,
-        "LastUpdate": "20230918-013737"
+        "LastUpdate": "20230918-021533"
     },
     "mortar": {
         "ID": 7016,
         "Price": 1080,
-        "LastUpdate": "20230918-013737"
+        "LastUpdate": "20230918-021533"
     },
     "natron": {
         "ID": 5522,
         "Price": 860,
-        "LastUpdate": "20230918-013737"
+        "LastUpdate": "20230918-021533"
     },
     "oroshigane ingot": {
         "ID": 19943,
         "Price": 1980,
-        "LastUpdate": "20230918-013737"
+        "LastUpdate": "20230918-021533"
     },
     "pewter ingot": {
         "ID": 36183,
-        "Price": 2050,
-        "LastUpdate": "20230918-013737"
+        "Price": 1990,
+        "LastUpdate": "20230918-021533"
     },
     "pewter ore": {
         "ID": 36175,
         "Price": 320,
-        "LastUpdate": "20230918-013737"
+        "LastUpdate": "20230918-021533"
     },
     "potter's clay": {
         "ID": 5513,
         "Price": 330,
-        "LastUpdate": "20230918-013737"
+        "LastUpdate": "20230918-021533"
     },
     "red pine log": {
         "ID": 36192,
         "Price": 350,
-        "LastUpdate": "20230918-013737"
+        "LastUpdate": "20230918-021533"
     },
     "red pine lumber": {
         "ID": 36198,
         "Price": 2400,
-        "LastUpdate": "20230918-013737"
+        "LastUpdate": "20230918-021533"
     },
     "roof tile": {
         "ID": 7015,
         "Price": 770,
-        "LastUpdate": "20230918-013737"
+        "LastUpdate": "20230918-021533"
     },
     "silex": {
         "ID": 5523,
         "Price": 390,
-        "LastUpdate": "20230918-013737"
+        "LastUpdate": "20230918-021533"
     },
     "straw": {
         "ID": 5342,
-        "Price": 140,
-        "LastUpdate": "20230918-013737"
+        "Price": 130,
+        "LastUpdate": "20230918-021533"
     },
     "tempered glass": {
         "ID": 16908,
         "Price": 14040,
-        "LastUpdate": "20230918-013737"
+        "LastUpdate": "20230918-021533"
     }
 }
