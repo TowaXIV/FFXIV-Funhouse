@@ -124,6 +124,7 @@ def main():
         print(f"Current price for {key} (average): {price}, rounded: {rPrice}")
         itemProps[key]["Price"] = rPrice
         itemProps[key]["LastUpdate"] = gTimestamp
+    #"""
     #   save to root database
     with open(f"{dataDir}\\{gItemProperties}",'w') as f:
         json.dump(itemProps, f, indent=4)
@@ -141,7 +142,7 @@ def main():
             itemUpdate = itemProps.get(item, {}).get('LastUpdate')
             pricingData.at[row_index, 'Price to buy'] = itemPrice
             pricingData.at[row_index, 'Last Updated'] = itemUpdate
-            pricingData["Price to buy"] = pricingData["Price to buy"].astype('int')
+            #pricingData["Price to buy"] = pricingData["Price to buy"].astype('int')
     #   save to database file
     pricingData.to_csv(rf"{dataDir}\\{gPricingData}", sep=';',index=False)
     print(pricingData)

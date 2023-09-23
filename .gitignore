@@ -28,7 +28,10 @@ obj/
 _ReSharper*/
 [Tt]est[Rr]esult*
 .vs/
-#Ignore 
+#Ignore database & items
+database/*.csv
+database/*.json
 database/*/
+__pycache__/
 #Nuget packages folder
 packages/
