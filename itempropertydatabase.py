@@ -1,4 +1,5 @@
 import json
+import apiUniversalis as api
 version = 'v2'
 """
 Type of database: JSON
@@ -38,22 +39,23 @@ class ItemDatabase:
             "name": self.name, #str, item name
             "price": 0, #int, average price history on FFXIV marketboard
             "lastUpdate": "", #str, last date an interface updated info of the entry
+            "acquisition": "" #str, 'crafted' or 'gathered' - crafted should need ingredients entry
         }
         return entry
 
-    def newIDListing(self):
-        entry = ItemDatabase(self.name).newEntry()
-        print(entry)
-#        url = rf"https://xivapi.com/search?indexes=item&string={item}"
-#        response, newItemID = api.itemIDSearch(url,item)
-#        if response.status_code != 200:
-#            print(f"Something went wrong fetching ID from XIVAPI, status code: {response.status_code}")
-#        entry[item]["ID"] = newItemID["ID"]
-#        with open(f"{gRootDir}\\_newItemID\\{item}.json",'w') as f: # save data for logging
-#            json.dump(response.json(), f, indent=4)
-#        return entry
+    def newIngredientsEntry(self):
+        # This should somehow figure out what the materials/ingredients required are for 1 craft
+        # Placeholder (R&D required)
+        pass
 
-ItemDatabase('fire shard').newIDListing()
+    def newIDListing(self): # Create new entry in data structure with input item name and find item ID with API
+        entry = ItemDatabase(self.name).newEntry()
+        url = rf"https://xivapi.com/search?indexes=item&string={self.name}"
+        response, newItemID = api.itemIDSearch(url,self.name)
+        if response.status_code != 200:
+            print(f"Something went wrong fetching ID from XIVAPI, status code: {response.status_code}")
+        entry["id"] = newItemID["ID"]
+        return entry, response
 
 #%% Changelog
 """

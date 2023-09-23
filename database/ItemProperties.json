@@ -1,417 +1,131 @@
 {
-    "bamboo stick": {
-        "ID": 5365,
-        "Price": 960,
-        "LastUpdate": "20230921-225216"
-    },
-    "bismuth ore": {
-        "ID": 36164,
-        "Price": 320,
-        "LastUpdate": "20230921-225216"
-    },
-    "carbon fiber": {
-        "ID": 5339,
-        "Price": 2550,
-        "LastUpdate": "20230921-225216"
-    },
-    "dark hempen cloth": {
-        "ID": 36208,
-        "Price": 1780,
-        "LastUpdate": "20230921-225216"
-    },
-    "doman iron ore": {
-        "ID": 19953,
-        "Price": 370,
-        "LastUpdate": "20230921-225216"
-    },
-    "glass fiber": {
-        "ID": 15649,
-        "Price": 6020,
-        "LastUpdate": "20230921-225216"
-    },
-    "granite": {
-        "ID": 7008,
-        "Price": 350,
-        "LastUpdate": "20230921-225216"
-    },
-    "high durium ingot": {
-        "ID": 36169,
-        "Price": 1800,
-        "LastUpdate": "20230921-225216"
-    },
-    "larch lumber": {
-        "ID": 19926,
-        "Price": 1410,
-        "LastUpdate": "20230921-225216"
-    },
-    "larch log": {
-        "ID": 19931,
-        "Price": 440,
-        "LastUpdate": "20230921-225216"
-    },
-    "mortar": {
-        "ID": 7016,
-        "Price": 1100,
-        "LastUpdate": "20230921-225216"
-    },
-    "natron": {
-        "ID": 5522,
-        "Price": 740,
-        "LastUpdate": "20230921-225216"
-    },
-    "oroshigane ingot": {
-        "ID": 19943,
-        "Price": 1980,
-        "LastUpdate": "20230921-225216"
-    },
-    "pewter ingot": {
-        "ID": 36183,
-        "Price": 2220,
-        "LastUpdate": "20230921-225216"
-    },
-    "pewter ore": {
-        "ID": 36175,
-        "Price": 310,
-        "LastUpdate": "20230921-225216"
-    },
-    "potter's clay": {
-        "ID": 5513,
-        "Price": 310,
-        "LastUpdate": "20230921-225216"
-    },
-    "red pine log": {
-        "ID": 36192,
-        "Price": 390,
-        "LastUpdate": "20230921-225216"
-    },
-    "red pine lumber": {
-        "ID": 36198,
-        "Price": 2510,
-        "LastUpdate": "20230921-225216"
-    },
-    "roof tile": {
-        "ID": 7015,
-        "Price": 820,
-        "LastUpdate": "20230921-225216"
-    },
-    "silex": {
-        "ID": 5523,
-        "Price": 380,
-        "LastUpdate": "20230921-225216"
-    },
-    "straw": {
-        "ID": 5342,
-        "Price": 130,
-        "LastUpdate": "20230921-225216"
-    },
-    "tempered glass": {
-        "ID": 16908,
-        "Price": 13920,
-        "LastUpdate": "20230921-225216"
-    },
-    "cedar lumber": {
-        "ID": 5366,
-        "Price": 1520,
-        "LastUpdate": "20230921-225216"
-    },
-    "cobalt ingot": {
-        "ID": 5059,
-        "Price": 940,
-        "LastUpdate": "20230921-225216"
-    },
-    "coke": {
-        "ID": 5530,
-        "Price": 320,
-        "LastUpdate": "20230921-225216"
-    },
-    "darksteel ore": {
-        "ID": 5121,
-        "Price": 610,
-        "LastUpdate": "20230921-225216"
-    },
-    "electrum ingot": {
-        "ID": 5066,
-        "Price": 1290,
-        "LastUpdate": "20230921-225216"
-    },
-    "hardened sap": {
-        "ID": 5532,
-        "Price": 410,
-        "LastUpdate": "20230921-225216"
-    },
-    "petrified log": {
-        "ID": 7596,
-        "Price": 2200,
-        "LastUpdate": "20230921-225216"
-    },
-    "rose gold ingot": {
-        "ID": 5067,
-        "Price": 270,
-        "LastUpdate": "20230921-225216"
-    },
-    "scarlet sap": {
-        "ID": 7590,
-        "Price": 500,
-        "LastUpdate": "20230921-225216"
-    },
-    "silver ingot": {
-        "ID": 5064,
-        "Price": 890,
-        "LastUpdate": "20230921-225216"
-    },
-    "spruce lumber": {
-        "ID": 5378,
-        "Price": 2600,
-        "LastUpdate": "20230921-225216"
-    },
-    "varnish": {
-        "ID": 7017,
-        "Price": 1800,
-        "LastUpdate": "20230921-225216"
-    },
-    "astral moraine": {
-        "ID": 5226,
-        "Price": 560,
-        "LastUpdate": "20230921-225216"
-    },
-    "aurum regis ingot": {
-        "ID": 12523,
-        "Price": 150,
-        "LastUpdate": "20230921-225216"
-    },
-    "basilisk whetstone": {
-        "ID": 5262,
-        "Price": 850,
-        "LastUpdate": "20230921-225216"
-    },
-    "bear fat": {
-        "ID": 12609,
-        "Price": 660,
-        "LastUpdate": "20230921-225216"
-    },
-    "cassia lumber": {
-        "ID": 12232,
-        "Price": 3490,
-        "LastUpdate": "20230921-225216"
-    },
-    "celestine": {
-        "ID": 12912,
-        "Price": 7000,
-        "LastUpdate": "20230921-225216"
-    },
-    "cobalt ore": {
-        "ID": 5116,
-        "Price": 310,
-        "LastUpdate": "20230921-225216"
-    },
-    "cryptomeria log": {
-        "ID": 26529,
-        "Price": 5650,
-        "LastUpdate": "20230921-225216"
-    },
-    "dawnborne aethersand": {
-        "ID": 12937,
-        "Price": 2590,
-        "LastUpdate": "20230921-225216"
-    },
-    "eikon metal": {
-        "ID": 14150,
-        "Price": 130,
-        "LastUpdate": "20230921-225216"
-    },
-    "eikon mythrite": {
-        "ID": 14147,
-        "Price": 160,
-        "LastUpdate": "20230921-225216"
-    },
-    "emery": {
-        "ID": 7601,
-        "Price": 2060,
-        "LastUpdate": "20230921-225216"
-    },
-    "ferberite": {
-        "ID": 7588,
-        "Price": 120,
-        "LastUpdate": "20230921-225216"
-    },
-    "gold ingot": {
-        "ID": 5069,
-        "Price": 30,
-        "LastUpdate": "20230921-225216"
-    },
-    "gold ore": {
-        "ID": 5118,
-        "Price": 260,
-        "LastUpdate": "20230921-225216"
-    },
-    "kamacite ore": {
-        "ID": 25008,
-        "Price": 1670,
-        "LastUpdate": "20230921-225216"
-    },
-    "lumythrite ore": {
-        "ID": 14148,
-        "Price": 1290,
-        "LastUpdate": "20230921-225216"
-    },
-    "mythrite ore": {
-        "ID": 12534,
-        "Price": 520,
-        "LastUpdate": "20230921-225216"
-    },
-    "platinum ingot": {
-        "ID": 9360,
-        "Price": 20,
-        "LastUpdate": "20230921-225216"
-    },
-    "platinum ore": {
-        "ID": 5120,
-        "Price": 640,
-        "LastUpdate": "20230921-225216"
-    },
-    "pure titanium ore": {
-        "ID": 26531,
-        "Price": 6110,
-        "LastUpdate": "20230921-225216"
-    },
-    "raw larimar": {
-        "ID": 12551,
-        "Price": 390,
-        "LastUpdate": "20230921-225216"
-    },
-    "raw topaz": {
-        "ID": 5149,
-        "Price": 980,
-        "LastUpdate": "20230921-225216"
-    },
-    "raw triphane": {
-        "ID": 19968,
-        "Price": 190,
-        "LastUpdate": "20230921-225216"
-    },
-    "scheelite": {
-        "ID": 7597,
-        "Price": 1840,
-        "LastUpdate": "20230921-225216"
-    },
-    "seventh heaven": {
-        "ID": 12634,
-        "Price": 270,
-        "LastUpdate": "20230921-225216"
-    },
-    "smithsonite ore": {
-        "ID": 14151,
-        "Price": 1280,
-        "LastUpdate": "20230921-225216"
-    },
-    "sphalerite": {
-        "ID": 13750,
-        "Price": 2130,
-        "LastUpdate": "20230921-225216"
-    },
-    "stiperstone": {
-        "ID": 5232,
-        "Price": 140,
-        "LastUpdate": "20230921-225216"
-    },
-    "violet quartz": {
-        "ID": 5163,
-        "Price": 50,
-        "LastUpdate": "20230921-225216"
-    },
-    "vivianite": {
-        "ID": 12224,
-        "Price": 300,
-        "LastUpdate": "20230921-225216"
-    },
-    "earth cluster": {
-        "ID": 17,
-        "Price": 30,
-        "LastUpdate": "20230921-225216"
-    },
-    "earth crystal": {
-        "ID": 11,
-        "Price": 50,
-        "LastUpdate": "20230921-225216"
-    },
-    "earth shard": {
-        "ID": 5,
-        "Price": 50,
-        "LastUpdate": "20230921-225216"
-    },
-    "fire cluster": {
-        "ID": 14,
-        "Price": 100,
-        "LastUpdate": "20230921-225216"
-    },
-    "fire crystal": {
-        "ID": 8,
-        "Price": 60,
-        "LastUpdate": "20230921-225216"
-    },
-    "fire shard": {
-        "ID": 2,
-        "Price": 60,
-        "LastUpdate": "20230921-225216"
-    },
-    "ice cluster": {
-        "ID": 15,
-        "Price": 10,
-        "LastUpdate": "20230921-225216"
-    },
-    "ice crystal": {
-        "ID": 9,
-        "Price": 50,
-        "LastUpdate": "20230921-225216"
-    },
-    "ice shard": {
-        "ID": 3,
-        "Price": 60,
-        "LastUpdate": "20230921-225216"
-    },
-    "lightning cluster": {
-        "ID": 18,
-        "Price": 160,
-        "LastUpdate": "20230921-225216"
-    },
-    "lightning crystal": {
-        "ID": 12,
-        "Price": 40,
-        "LastUpdate": "20230921-225216"
-    },
-    "lightning shard": {
-        "ID": 6,
-        "Price": 70,
-        "LastUpdate": "20230921-225216"
-    },
-    "water cluster": {
-        "ID": 19,
-        "Price": 70,
-        "LastUpdate": "20230921-225216"
-    },
-    "water crystal": {
-        "ID": 13,
-        "Price": 50,
-        "LastUpdate": "20230921-225216"
-    },
-    "water shard": {
-        "ID": 7,
-        "Price": 70,
-        "LastUpdate": "20230921-225216"
-    },
-    "wind cluster": {
-        "ID": 16,
-        "Price": 130,
-        "LastUpdate": "20230921-225216"
-    },
-    "wind crystal": {
-        "ID": 10,
-        "Price": 60,
-        "LastUpdate": "20230921-225216"
-    },
-    "wind shard": {
-        "ID": 4,
-        "Price": 60,
-        "LastUpdate": "20230921-225216"
-    }
+    "version": "v2",
+    "data": [
+        {
+            "id": 17,
+            "name": "earth cluster",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 11,
+            "name": "earth crystal",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 5,
+            "name": "earth shard",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 14,
+            "name": "fire cluster",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 8,
+            "name": "fire crystal",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 2,
+            "name": "fire shard",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 15,
+            "name": "ice cluster",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 9,
+            "name": "ice crystal",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 3,
+            "name": "ice shard",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 18,
+            "name": "lightning cluster",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 12,
+            "name": "lightning crystal",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 6,
+            "name": "lightning shard",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 19,
+            "name": "water cluster",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 13,
+            "name": "water crystal",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 7,
+            "name": "water shard",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 16,
+            "name": "wind cluster",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 10,
+            "name": "wind crystal",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 4,
+            "name": "wind shard",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        }
+    ]
 }
