@@ -66,9 +66,14 @@ def savePricing(data):
 def listRemoveDuplicates(source,filter):
     source = [x.lower() for x in source]
     filter = [x.lower() for x in filter]
+    source.sort()
+    filter.sort()
+    print(filter)
     for i in source[:]:
+        print(i)
         if i in filter:
-            source.remove(i)
+            print('found duplicate.')
+            source.remove(i) # <todo> not removing entry correctly
     return source
 
 def updatePrices(database):
@@ -112,10 +117,10 @@ def main():
     lItems = listRemoveDuplicates(lItems,lItemIgnore)
 
     # Identify items with no entry in database
-    lItemsWithoutID = lItems.copy()
-    for item in lItemsWithoutID:
-        if itemProps["data"]["name"] == item:
-            lItemsWithoutID.remove(item)
+    lItemsWithID = [i.get('name') for i in itemProps["data"]] # retrieve list of items in ItemDB
+    lItemsWithoutID = lItems.copy() # copy list for local processing
+    listRemoveDuplicates(lItemsWithoutID,lItemsWithID)
+
     print(f"New items to include in databse: {lItemsWithoutID}")
     if len(lItemsWithoutID) > 0: # check if all items have ID, skip if True
         os.mkdir(f"{gRootDir}\\_newItemID")

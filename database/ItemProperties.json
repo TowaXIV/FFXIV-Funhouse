@@ -126,6 +126,342 @@
             "price": 0,
             "lastUpdate": "",
             "acquisition": ""
+        },
+        {
+            "id": 31956,
+            "name": "grade 4 artisanal skybuilders' astroscope",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31954,
+            "name": "grade 4 artisanal skybuilders' chocobo weathervane",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31955,
+            "name": "grade 4 artisanal skybuilders' company chest",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31953,
+            "name": "grade 4 artisanal skybuilders' icebox",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31960,
+            "name": "grade 4 artisanal skybuilders' sorbet",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31959,
+            "name": "grade 4 artisanal skybuilders' tincture",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31957,
+            "name": "grade 4 artisanal skybuilders' tool belt",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31958,
+            "name": "grade 4 artisanal skybuilders' vest",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31950,
+            "name": "grade 4 skybuilders' awning",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31945,
+            "name": "grade 4 skybuilders' bed",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31948,
+            "name": "grade 4 skybuilders' brazier",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31951,
+            "name": "grade 4 skybuilders' growth formula",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31947,
+            "name": "grade 4 skybuilders' lamppost",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31946,
+            "name": "grade 4 skybuilders' oven",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31949,
+            "name": "grade 4 skybuilders' overalls",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31952,
+            "name": "grade 4 skybuilders' stew",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31956,
+            "name": "grade 4 artisanal skybuilders' astroscope",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31954,
+            "name": "grade 4 artisanal skybuilders' chocobo weathervane",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31955,
+            "name": "grade 4 artisanal skybuilders' company chest",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31953,
+            "name": "grade 4 artisanal skybuilders' icebox",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31960,
+            "name": "grade 4 artisanal skybuilders' sorbet",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31959,
+            "name": "grade 4 artisanal skybuilders' tincture",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31957,
+            "name": "grade 4 artisanal skybuilders' tool belt",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31958,
+            "name": "grade 4 artisanal skybuilders' vest",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31950,
+            "name": "grade 4 skybuilders' awning",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31945,
+            "name": "grade 4 skybuilders' bed",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31948,
+            "name": "grade 4 skybuilders' brazier",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31951,
+            "name": "grade 4 skybuilders' growth formula",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31947,
+            "name": "grade 4 skybuilders' lamppost",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31946,
+            "name": "grade 4 skybuilders' oven",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31949,
+            "name": "grade 4 skybuilders' overalls",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31952,
+            "name": "grade 4 skybuilders' stew",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31956,
+            "name": "grade 4 artisanal skybuilders' astroscope",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31954,
+            "name": "grade 4 artisanal skybuilders' chocobo weathervane",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31955,
+            "name": "grade 4 artisanal skybuilders' company chest",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31953,
+            "name": "grade 4 artisanal skybuilders' icebox",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31960,
+            "name": "grade 4 artisanal skybuilders' sorbet",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31959,
+            "name": "grade 4 artisanal skybuilders' tincture",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31957,
+            "name": "grade 4 artisanal skybuilders' tool belt",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31958,
+            "name": "grade 4 artisanal skybuilders' vest",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31950,
+            "name": "grade 4 skybuilders' awning",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31945,
+            "name": "grade 4 skybuilders' bed",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31948,
+            "name": "grade 4 skybuilders' brazier",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31951,
+            "name": "grade 4 skybuilders' growth formula",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31947,
+            "name": "grade 4 skybuilders' lamppost",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31946,
+            "name": "grade 4 skybuilders' oven",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31949,
+            "name": "grade 4 skybuilders' overalls",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
+        },
+        {
+            "id": 31952,
+            "name": "grade 4 skybuilders' stew",
+            "price": 0,
+            "lastUpdate": "",
+            "acquisition": ""
         }
     ]
 }

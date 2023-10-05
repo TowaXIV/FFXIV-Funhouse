@@ -29,9 +29,7 @@ _ReSharper*/
 [Tt]est[Rr]esult*
 .vs/
 #Ignore database & items
-database/*.csv
-database/*.json
-database/*/
+database/
 __pycache__/
 #Nuget packages folder
 packages/
