@@ -1,9 +1,14 @@
-from accessFile import CSVClass, JSONClass
-import apiUniversalis as api
+#%% Modules
+# official modules
 import json
 import os
 import pandas as pd
 from datetime import datetime
+
+# custom scripts
+from accessFile import CSVClass, JSONClass
+import apiUniversalis as api
+from itempropertydatabase import ItemDatabase
 
 #%%     Global Constants
 
@@ -35,7 +40,6 @@ os.mkdir(gPricesDir)
 
 #%%     Functions
 def getPrices(item,id):
-#   https://universalis.app/api/v2/Europe/2?listings=0&entries=0
     region = 'Europe'
     listings = 0
     entries = 0
@@ -59,24 +63,32 @@ def savePricing(data):
     data["rootname"] = f"{ssRootname}-before-{gTimestamp}"
     CSVClass(data).savetocsv()
 
-def listRemoveDuplicates(source,filter):
+def listRemoveDuplicates(source,filter): # check list source & list filter, del matches in source + return
     source = [x.lower() for x in source]
     filter = [x.lower() for x in filter]
-    for i in source[:]:
+    source.sort()
+    filter.sort()
+    filtered_list = source.copy()
+    for i in source:
         if i in filter:
-            source.remove(i)
-    return source
+            filtered_list.remove(i)
+    return filtered_list
 
-def newIDListing(item):
-    entry = {item:{"ID":"","Price":"","LastUpdate":""}}
-    url = rf"https://xivapi.com/search?indexes=item&string={item}"
-    response, newItemID = api.itemIDSearch(url,item)
-    if response.status_code != 200:
-        print(f"Something went wrong fetching ID from XIVAPI, status code: {response.status_code}")
-    entry[item]["ID"] = newItemID["ID"]
-    with open(f"{gRootDir}\\_newItemID\\{item}.json",'w') as f: # save data for logging
-        json.dump(response.json(), f, indent=4)
-    return entry
+def updatePrices(entries, database): # fetch prices for objects using Universalis API
+    for item in database["data"]: 
+        if item["name"] in entries:
+            price = getPrices(item["name"],item["id"])
+            price = price["averagePrice"]
+            rPrice = eval('price / 10')
+            rPrice = round(rPrice,0)
+            rPrice = int(eval('rPrice * 10'))
+            print(f"Current price for {item['name']} (average): {price}, rounded: {rPrice}")
+            item["price"] = rPrice
+            item["lastUpdate"] = gTimestamp
+    with open(f"{dataDir}\\{gItemProperties}",'w') as f:
+        json.dump(database, f, indent=4)
+    return database
+
 
 #%%     Load in pricing & itemID list
 def main():
@@ -84,6 +96,7 @@ def main():
     itemProps = JSONClass(os.path.join(dataDir,gItemProperties)).readjson()
     saveItemProps(itemProps) #save backup in local database
     itemProps = itemProps["data"] #strip to only data
+    print(itemProps["version"])
 
     # Pricing spreadsheet
     pricingData = CSVClass(os.path.join(dataDir,gPricingData)).readcsv()
@@ -100,48 +113,41 @@ def main():
     lItemIgnore = lItemIgnore["data"]["Item Name"].values.tolist()
     lItems = listRemoveDuplicates(lItems,lItemIgnore)
 
-    # Identify items with no ID
-    lItemPropsWithID = list(dict.fromkeys(itemProps))
-    lItemsWithoutID = listRemoveDuplicates(lItems,lItemPropsWithID)
-    print(f"New items to include in databse: {lItemsWithoutID}")
-    if len(lItemsWithoutID) > 0: # check if all items have ID, skip if True
-        os.mkdir(f"{gRootDir}\\_newItemID")
-        for x in lItemsWithoutID:
-            newItem = newIDListing(x) # fetch ID with api
-            itemProps.update(newItem)
+    # Identify items with no entry in database
+    lItemsWithID = [i.get('name') for i in itemProps["data"]] # retrieve list of items in ItemDB
+    lItemsWithoutID = lItems.copy() # copy list for local processing
+    lItemsToProcess = listRemoveDuplicates(lItemsWithoutID,lItemsWithID)
 
-    # Update all prices in itemProps with api
+    print(f"New items to include in databse: {lItemsToProcess}")
+    if len(lItemsToProcess) > 0: # check if all items have ID, skip if True
+        os.mkdir(f"{gRootDir}\\_newItemID")
+        for x in lItemsToProcess:
+            newItem, response = ItemDatabase(x).newIDListing() # fetch ID with api
+            with open(f"{gRootDir}\\_newItemID\\{x}.json",'w') as f: # save data for logging
+                json.dump(response.json(), f, indent=4)
+            itemProps["data"].append(newItem)
+        # somehow sort
+
+    # Update all prices in spreadsheet with api
     """
-    This has a high load due to the API requests.
+    updatePrices has a high load due to the API requests.
     Can be commented for testing/debugging with current prices in JSON.
+        - probably make a check if script has run in the past 24 hours,
+            unlikely(?) to need a price update more than once per day.
     """
-    for key, value in itemProps.items(): # fetch price for object
-        price = getPrices(key,value["ID"])
-        price = price["averagePrice"]
-        rPrice = eval('price / 10')
-        rPrice = round(rPrice,0)
-        rPrice = int(eval('rPrice * 10'))
-        print(f"Current price for {key} (average): {price}, rounded: {rPrice}")
-        itemProps[key]["Price"] = rPrice
-        itemProps[key]["LastUpdate"] = gTimestamp
-    #   save to root database
-    with open(f"{dataDir}\\{gItemProperties}",'w') as f:
-        json.dump(itemProps, f, indent=4)
+    itemProps = updatePrices(lItems, itemProps)
     
     #%%     Update spreadsheet pricing
-    #print(pricingData)
     lItemIgnore = [x.lower() for x in lItemIgnore]
     for row_index, row in pricingData.iterrows():
         item = pricingData.at[row_index, 'Item Name'].lower()
-        print(item)
-        if item in lItemIgnore:
-            pass
-        else:
-            itemPrice = itemProps.get(item, {}).get('Price')
-            itemUpdate = itemProps.get(item, {}).get('LastUpdate')
+        if item not in lItemIgnore:
+            dbEntry = next(i for i in itemProps["data"] if i["name"] == item)
+            itemPrice = dbEntry.get('price')
+            itemUpdate = dbEntry.get('lastUpdate')
             pricingData.at[row_index, 'Price to buy'] = itemPrice
             pricingData.at[row_index, 'Last Updated'] = itemUpdate
-            pricingData["Price to buy"] = pricingData["Price to buy"].astype('int')
+
     #   save to database file
     pricingData.to_csv(rf"{dataDir}\\{gPricingData}", sep=';',index=False)
     print(pricingData)
