@@ -63,34 +63,31 @@ def savePricing(data):
     data["rootname"] = f"{ssRootname}-before-{gTimestamp}"
     CSVClass(data).savetocsv()
 
-def listRemoveDuplicates(source,filter):
+def listRemoveDuplicates(source,filter): # check list source & list filter, del matches in source + return
     source = [x.lower() for x in source]
     filter = [x.lower() for x in filter]
     source.sort()
     filter.sort()
-    print(filter)
-    for i in source[:]:
-        print(i)
+    filtered_list = source.copy()
+    for i in source:
         if i in filter:
-            print('found duplicate.')
-            source.remove(i) # <todo> not removing entry correctly
-    return source
+            filtered_list.remove(i)
+    return filtered_list
 
-def updatePrices(database):
-    for entry in database["data"]: # fetch price for object
-        """
-        price = getPrices(key,value["ID"])
-        price = price["averagePrice"]
-        rPrice = eval('price / 10')
-        rPrice = round(rPrice,0)
-        rPrice = int(eval('rPrice * 10'))
-        print(f"Current price for {key} (average): {price}, rounded: {rPrice}")
-        database[key]["Price"] = rPrice
-        database[key]["LastUpdate"] = gTimestamp
-        """
-    #   save to root database
+def updatePrices(entries, database): # fetch prices for objects using Universalis API
+    for item in database["data"]: 
+        if item["name"] in entries:
+            price = getPrices(item["name"],item["id"])
+            price = price["averagePrice"]
+            rPrice = eval('price / 10')
+            rPrice = round(rPrice,0)
+            rPrice = int(eval('rPrice * 10'))
+            print(f"Current price for {item['name']} (average): {price}, rounded: {rPrice}")
+            item["price"] = rPrice
+            item["lastUpdate"] = gTimestamp
     with open(f"{dataDir}\\{gItemProperties}",'w') as f:
         json.dump(database, f, indent=4)
+    return database
 
 
 #%%     Load in pricing & itemID list
@@ -119,40 +116,38 @@ def main():
     # Identify items with no entry in database
     lItemsWithID = [i.get('name') for i in itemProps["data"]] # retrieve list of items in ItemDB
     lItemsWithoutID = lItems.copy() # copy list for local processing
-    listRemoveDuplicates(lItemsWithoutID,lItemsWithID)
+    lItemsToProcess = listRemoveDuplicates(lItemsWithoutID,lItemsWithID)
 
-    print(f"New items to include in databse: {lItemsWithoutID}")
-    if len(lItemsWithoutID) > 0: # check if all items have ID, skip if True
+    print(f"New items to include in databse: {lItemsToProcess}")
+    if len(lItemsToProcess) > 0: # check if all items have ID, skip if True
         os.mkdir(f"{gRootDir}\\_newItemID")
-        for x in lItemsWithoutID:
+        for x in lItemsToProcess:
             newItem, response = ItemDatabase(x).newIDListing() # fetch ID with api
             with open(f"{gRootDir}\\_newItemID\\{x}.json",'w') as f: # save data for logging
                 json.dump(response.json(), f, indent=4)
             itemProps["data"].append(newItem)
         # somehow sort
 
-    # Update all prices in itemProps with api
+    # Update all prices in spreadsheet with api
     """
     updatePrices has a high load due to the API requests.
     Can be commented for testing/debugging with current prices in JSON.
         - probably make a check if script has run in the past 24 hours,
             unlikely(?) to need a price update more than once per day.
     """
-    updatePrices(itemProps)
+    itemProps = updatePrices(lItems, itemProps)
     
     #%%     Update spreadsheet pricing
-    #print(pricingData)
     lItemIgnore = [x.lower() for x in lItemIgnore]
     for row_index, row in pricingData.iterrows():
         item = pricingData.at[row_index, 'Item Name'].lower()
-        if item in lItemIgnore:
-            pass
-        else:
-            itemPrice = itemProps.get(item, {}).get('Price')
-            itemUpdate = itemProps.get(item, {}).get('LastUpdate')
+        if item not in lItemIgnore:
+            dbEntry = next(i for i in itemProps["data"] if i["name"] == item)
+            itemPrice = dbEntry.get('price')
+            itemUpdate = dbEntry.get('lastUpdate')
             pricingData.at[row_index, 'Price to buy'] = itemPrice
             pricingData.at[row_index, 'Last Updated'] = itemUpdate
-            #pricingData["Price to buy"] = pricingData["Price to buy"].astype('int')
+
     #   save to database file
     pricingData.to_csv(rf"{dataDir}\\{gPricingData}", sep=';',index=False)
     print(pricingData)

@@ -1,17 +1,122 @@
 Item Name;Price to buy;Last Updated
-Grade 4 Artisanal Skybuilders' Icebox;;
-Grade 4 Skybuilders' Bed;;
-Grade 4 Artisanal Skybuilders' Chocobo Weathervane;;
-Grade 4 Skybuilders' Oven;;
-Grade 4 Artisanal Skybuilders' Company Chest;;
-Grade 4 Skybuilders' Lamppost;;
-Grade 4 Artisanal Skybuilders' Astroscope;;
-Grade 4 Skybuilders' Brazier;;
-Grade 4 Artisanal Skybuilders' Tool Belt;;
-Grade 4 Skybuilders' Overalls;;
-Grade 4 Artisanal Skybuilders' Vest;;
-Grade 4 Skybuilders' Awning;;
-Grade 4 Artisanal Skybuilders' Tincture;;
-Grade 4 Skybuilders' Growth Formula;;
-Grade 4 Artisanal Skybuilders' Sorbet;;
-Grade 4 Skybuilders' Stew;;
+Grade 4 Artisanal Skybuilders' Astroscope;0.0;20231005-235848
+Grade 4 Artisanal Skybuilders' Chocobo Weathervane;0.0;20231005-235848
+Grade 4 Artisanal Skybuilders' Company Chest;0.0;20231005-235848
+Grade 4 Artisanal Skybuilders' Icebox;0.0;20231005-235848
+Grade 4 Artisanal Skybuilders' Sorbet;0.0;20231005-235848
+Grade 4 Artisanal Skybuilders' Tincture;0.0;20231005-235848
+Grade 4 Artisanal Skybuilders' Tool Belt;0.0;20231005-235848
+Grade 4 Artisanal Skybuilders' Vest;0.0;20231005-235848
+Grade 4 Skybuilders' Awning;0.0;20231005-235848
+Grade 4 Skybuilders' Bed;0.0;20231005-235848
+Grade 4 Skybuilders' Brazier;0.0;20231005-235848
+Grade 4 Skybuilders' Growth Formula;0.0;20231005-235848
+Grade 4 Skybuilders' Lamppost;0.0;20231005-235848
+Grade 4 Skybuilders' Oven;0.0;20231005-235848
+Grade 4 Skybuilders' Overalls;0.0;20231005-235848
+Grade 4 Skybuilders' Stew;0.0;20231005-235848
+Ice Cluster;10.0;20231005-235848
+Water Cluster;110.0;20231005-235848
+Wind Cluster;140.0;20231005-235848
+Lightning Cluster;170.0;20231005-235848
+Earth Cluster;30.0;20231005-235848
+Ice Crystal;40.0;20231005-235848
+Lightning Crystal;40.0;20231005-235848
+Earth Crystal;50.0;20231005-235848
+Earth Shard;50.0;20231005-235848
+Fire Crystal;50.0;20231005-235848
+Water Crystal;50.0;20231005-235848
+Lightning Shard;60.0;20231005-235848
+Wind Crystal;60.0;20231005-235848
+Wind Shard;60.0;20231005-235848
+Fire Shard;70.0;20231005-235848
+Ice Shard;70.0;20231005-235848
+Water Shard;70.0;20231005-235848
+Fire Cluster;90.0;20231005-235848
+Adamantite Rivets;620.0;20231005-235848
+Ancient Lumber;6270.0;20231005-235848
+Aqueous Whetstone;490.0;20231005-235848
+Astral Moraine;510.0;20231005-235848
+Astral Oil;1750.0;20231005-235848
+Aurum Regis Ingot;220.0;20231005-235848
+Basilisk Whetstone;800.0;20231005-235848
+Bear Fat;710.0;20231005-235848
+Carbon Fiber;2630.0;20231005-235848
+Cassia Block;7280.0;20231005-235848
+Cassia Log;100.0;20231005-235848
+Cassia Lumber;3780.0;20231005-235848
+Cassia Lumber;3780.0;20231005-235848
+Cedar Lumber;1450.0;20231005-235848
+Celestine;7430.0;20231005-235848
+Celestine;7430.0;20231005-235848
+Cobalt Ingot;1080.0;20231005-235848
+Cobalt Joint Plate;1950.0;20231005-235848
+Cobalt Ore;340.0;20231005-235848
+Cobalt Plate;2510.0;20231005-235848
+Cobalt Rivets;1480.0;20231005-235848
+Coke;340.0;20231005-235848
+Cryptomeria Log;5620.0;20231005-235848
+Cryptomeria Lumber;31520.0;20231005-235848
+Darksteel Ingot;4930.0;20231005-235848
+Darksteel Nugget;2270.0;20231005-235848
+Darksteel Ore;760.0;20231005-235848
+Darksteel Plate;3920.0;20231005-235848
+Darksteel Rivets;3940.0;20231005-235848
+Dawnborne Aethersand;2900.0;20231005-235848
+Eikon Iron Ingot;1530.0;20231005-235848
+Eikon Metal;120.0;20231005-235848
+Eikon Mythrite;220.0;20231005-235848
+Electrum Ingot;1290.0;20231005-235848
+Emery;2480.0;20231005-235848
+Farreach Canvas;2670.0;20231005-235848
+Ferberite;120.0;20231005-235848
+Galvanized Garlond Steel;13020.0;20231005-235848
+Garlond Steel;8310.0;20231005-235848
+Glass Fiber;6310.0;20231005-235848
+Gold Ingot;40.0;20231005-235848
+Gold Ore;200.0;20231005-235848
+Hardened Sap;330.0;20231005-235848
+High Mythrite Ingot;5590.0;20231005-235848
+Horn Glue;1930.0;20231005-235848
+Iron Nails;790.0;20231005-235848
+Kamacite;15050.0;20231005-235848
+Kamacite Ore;1380.0;20231005-235848
+Larimar;3770.0;20231005-235848
+Lumythrite Ore;1450.0;20231005-235848
+Mythril Plate;2350.0;20231005-235848
+Mythrite Ore;480.0;20231005-235848
+Mythrite Rivets;1900.0;20231005-235848
+Natron;780.0;20231005-235848
+Petrified Log;2580.0;20231005-235848
+Platinum Ingot;30.0;20231005-235848
+Platinum Nugget;3040.0;20231005-235848
+Platinum Ore;760.0;20231005-235848
+Potash;530.0;20231005-235848
+Pure Titanium Ore;5850.0;20231005-235848
+Pure Titanium Plate;34250.0;20231005-235848
+Raw Celestine;40.0;20231005-235848
+Raw Larimar;430.0;20231005-235848
+Raw Topaz;1060.0;20231005-235848
+Raw Triphane;220.0;20231005-235848
+Red Moko Grass;50.0;20231005-235848
+Rose Gold Ingot;410.0;20231005-235848
+Rose Gold Nugget;1630.0;20231005-235848
+Scarlet Sap;780.0;20231005-235848
+Scheelite;1900.0;20231005-235848
+Seventh Heaven;270.0;20231005-235848
+Silex;480.0;20231005-235848
+Silver Ingot;920.0;20231005-235848
+Smithsonite Ore;1210.0;20231005-235848
+Sphalerite;1990.0;20231005-235848
+Spruce Lumber;2670.0;20231005-235848
+Steel Joint Plate;1490.0;20231005-235848
+Steel Nails;260.0;20231005-235848
+Stiperstone;120.0;20231005-235848
+Tempered Glass;13600.0;20231005-235848
+Topaz;6650.0;20231005-235848
+Treated Spruce Lumber;10250.0;20231005-235848
+Triphane;600.0;20231005-235848
+Varnish;1910.0;20231005-235848
+Violet Quartz;60.0;20231005-235848
+Vivianite;290.0;20231005-235848
+Wolfram Ingot;5640.0;20231005-235848

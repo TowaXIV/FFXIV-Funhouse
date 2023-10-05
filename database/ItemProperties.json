@@ -4,463 +4,834 @@
         {
             "id": 17,
             "name": "earth cluster",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 30,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 11,
             "name": "earth crystal",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 50,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 5,
             "name": "earth shard",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 50,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 14,
             "name": "fire cluster",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 90,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 8,
             "name": "fire crystal",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 50,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 2,
             "name": "fire shard",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 70,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 15,
             "name": "ice cluster",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 10,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 9,
             "name": "ice crystal",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 40,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 3,
             "name": "ice shard",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 70,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 18,
             "name": "lightning cluster",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 170,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 12,
             "name": "lightning crystal",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 40,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 6,
             "name": "lightning shard",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 60,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 19,
             "name": "water cluster",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 110,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 13,
             "name": "water crystal",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 50,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 7,
             "name": "water shard",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 70,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 16,
             "name": "wind cluster",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 140,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 10,
             "name": "wind crystal",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 60,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 4,
             "name": "wind shard",
-            "price": 0,
-            "lastUpdate": "",
+            "price": 60,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 31956,
             "name": "grade 4 artisanal skybuilders' astroscope",
             "price": 0,
-            "lastUpdate": "",
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 31954,
             "name": "grade 4 artisanal skybuilders' chocobo weathervane",
             "price": 0,
-            "lastUpdate": "",
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 31955,
             "name": "grade 4 artisanal skybuilders' company chest",
             "price": 0,
-            "lastUpdate": "",
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 31953,
             "name": "grade 4 artisanal skybuilders' icebox",
             "price": 0,
-            "lastUpdate": "",
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 31960,
             "name": "grade 4 artisanal skybuilders' sorbet",
             "price": 0,
-            "lastUpdate": "",
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 31959,
             "name": "grade 4 artisanal skybuilders' tincture",
             "price": 0,
-            "lastUpdate": "",
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 31957,
             "name": "grade 4 artisanal skybuilders' tool belt",
             "price": 0,
-            "lastUpdate": "",
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 31958,
             "name": "grade 4 artisanal skybuilders' vest",
             "price": 0,
-            "lastUpdate": "",
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 31950,
             "name": "grade 4 skybuilders' awning",
             "price": 0,
-            "lastUpdate": "",
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 31945,
             "name": "grade 4 skybuilders' bed",
             "price": 0,
-            "lastUpdate": "",
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 31948,
             "name": "grade 4 skybuilders' brazier",
             "price": 0,
-            "lastUpdate": "",
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 31951,
             "name": "grade 4 skybuilders' growth formula",
             "price": 0,
-            "lastUpdate": "",
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 31947,
             "name": "grade 4 skybuilders' lamppost",
             "price": 0,
-            "lastUpdate": "",
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 31946,
             "name": "grade 4 skybuilders' oven",
             "price": 0,
-            "lastUpdate": "",
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 31949,
             "name": "grade 4 skybuilders' overalls",
             "price": 0,
-            "lastUpdate": "",
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
             "id": 31952,
             "name": "grade 4 skybuilders' stew",
             "price": 0,
-            "lastUpdate": "",
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31956,
-            "name": "grade 4 artisanal skybuilders' astroscope",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 12530,
+            "name": "adamantite rivets",
+            "price": 620,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31954,
-            "name": "grade 4 artisanal skybuilders' chocobo weathervane",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 7606,
+            "name": "ancient lumber",
+            "price": 6270,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31955,
-            "name": "grade 4 artisanal skybuilders' company chest",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 5261,
+            "name": "aqueous whetstone",
+            "price": 490,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31953,
-            "name": "grade 4 artisanal skybuilders' icebox",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 5226,
+            "name": "astral moraine",
+            "price": 510,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31960,
-            "name": "grade 4 artisanal skybuilders' sorbet",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 12606,
+            "name": "astral oil",
+            "price": 1750,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31959,
-            "name": "grade 4 artisanal skybuilders' tincture",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 12523,
+            "name": "aurum regis ingot",
+            "price": 220,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31957,
-            "name": "grade 4 artisanal skybuilders' tool belt",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 5262,
+            "name": "basilisk whetstone",
+            "price": 800,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31958,
-            "name": "grade 4 artisanal skybuilders' vest",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 12609,
+            "name": "bear fat",
+            "price": 710,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31950,
-            "name": "grade 4 skybuilders' awning",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 5339,
+            "name": "carbon fiber",
+            "price": 2630,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31945,
-            "name": "grade 4 skybuilders' bed",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 13758,
+            "name": "cassia block",
+            "price": 7280,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31948,
-            "name": "grade 4 skybuilders' brazier",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 12221,
+            "name": "cassia log",
+            "price": 100,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31951,
-            "name": "grade 4 skybuilders' growth formula",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 12232,
+            "name": "cassia lumber",
+            "price": 3780,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31947,
-            "name": "grade 4 skybuilders' lamppost",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 5366,
+            "name": "cedar lumber",
+            "price": 1450,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31946,
-            "name": "grade 4 skybuilders' oven",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 12912,
+            "name": "celestine",
+            "price": 7430,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31949,
-            "name": "grade 4 skybuilders' overalls",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 5059,
+            "name": "cobalt ingot",
+            "price": 1080,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31952,
-            "name": "grade 4 skybuilders' stew",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 7023,
+            "name": "cobalt joint plate",
+            "price": 1950,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31956,
-            "name": "grade 4 artisanal skybuilders' astroscope",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 5116,
+            "name": "cobalt ore",
+            "price": 340,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31954,
-            "name": "grade 4 artisanal skybuilders' chocobo weathervane",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 5074,
+            "name": "cobalt plate",
+            "price": 2510,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31955,
-            "name": "grade 4 artisanal skybuilders' company chest",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 5094,
+            "name": "cobalt rivets",
+            "price": 1480,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31953,
-            "name": "grade 4 artisanal skybuilders' icebox",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 5530,
+            "name": "coke",
+            "price": 340,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31960,
-            "name": "grade 4 artisanal skybuilders' sorbet",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 26529,
+            "name": "cryptomeria log",
+            "price": 5620,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31959,
-            "name": "grade 4 artisanal skybuilders' tincture",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 26530,
+            "name": "cryptomeria lumber",
+            "price": 31520,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31957,
-            "name": "grade 4 artisanal skybuilders' tool belt",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 5060,
+            "name": "darksteel ingot",
+            "price": 4930,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31958,
-            "name": "grade 4 artisanal skybuilders' vest",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 5061,
+            "name": "darksteel nugget",
+            "price": 2270,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31950,
-            "name": "grade 4 skybuilders' awning",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 5121,
+            "name": "darksteel ore",
+            "price": 760,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31945,
-            "name": "grade 4 skybuilders' bed",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 5075,
+            "name": "darksteel plate",
+            "price": 3920,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31948,
-            "name": "grade 4 skybuilders' brazier",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 5095,
+            "name": "darksteel rivets",
+            "price": 3940,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31951,
-            "name": "grade 4 skybuilders' growth formula",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 12937,
+            "name": "dawnborne aethersand",
+            "price": 2900,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31947,
-            "name": "grade 4 skybuilders' lamppost",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 14149,
+            "name": "eikon iron ingot",
+            "price": 1530,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31946,
-            "name": "grade 4 skybuilders' oven",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 14150,
+            "name": "eikon metal",
+            "price": 120,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31949,
-            "name": "grade 4 skybuilders' overalls",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 14147,
+            "name": "eikon mythrite",
+            "price": 220,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         },
         {
-            "id": 31952,
-            "name": "grade 4 skybuilders' stew",
-            "price": 0,
-            "lastUpdate": "",
+            "id": 5066,
+            "name": "electrum ingot",
+            "price": 1290,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 7601,
+            "name": "emery",
+            "price": 2480,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 12231,
+            "name": "farreach canvas",
+            "price": 2670,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 7588,
+            "name": "ferberite",
+            "price": 120,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 14935,
+            "name": "galvanized garlond steel",
+            "price": 13020,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 12913,
+            "name": "garlond steel",
+            "price": 8310,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 15649,
+            "name": "glass fiber",
+            "price": 6310,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5069,
+            "name": "gold ingot",
+            "price": 40,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5118,
+            "name": "gold ore",
+            "price": 200,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5532,
+            "name": "hardened sap",
+            "price": 330,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 14146,
+            "name": "high mythrite ingot",
+            "price": 5590,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5505,
+            "name": "horn glue",
+            "price": 1930,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 7018,
+            "name": "iron nails",
+            "price": 790,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 25009,
+            "name": "kamacite",
+            "price": 15050,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 25008,
+            "name": "kamacite ore",
+            "price": 1380,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 12541,
+            "name": "larimar",
+            "price": 3770,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 14148,
+            "name": "lumythrite ore",
+            "price": 1450,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5079,
+            "name": "mythril plate",
+            "price": 2350,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 12534,
+            "name": "mythrite ore",
+            "price": 480,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 12528,
+            "name": "mythrite rivets",
+            "price": 1900,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5522,
+            "name": "natron",
+            "price": 780,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 7596,
+            "name": "petrified log",
+            "price": 2580,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 9360,
+            "name": "platinum ingot",
+            "price": 30,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 9359,
+            "name": "platinum nugget",
+            "price": 3040,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5120,
+            "name": "platinum ore",
+            "price": 760,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5501,
+            "name": "potash",
+            "price": 530,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 26531,
+            "name": "pure titanium ore",
+            "price": 5850,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 26532,
+            "name": "pure titanium plate",
+            "price": 34250,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 12223,
+            "name": "raw celestine",
+            "price": 40,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 12551,
+            "name": "raw larimar",
+            "price": 430,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5149,
+            "name": "raw topaz",
+            "price": 1060,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 19968,
+            "name": "raw triphane",
+            "price": 220,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 12220,
+            "name": "red moko grass",
+            "price": 50,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5067,
+            "name": "rose gold ingot",
+            "price": 410,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5068,
+            "name": "rose gold nugget",
+            "price": 1630,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 7590,
+            "name": "scarlet sap",
+            "price": 780,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 7597,
+            "name": "scheelite",
+            "price": 1900,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 12634,
+            "name": "seventh heaven",
+            "price": 270,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5523,
+            "name": "silex",
+            "price": 480,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5064,
+            "name": "silver ingot",
+            "price": 920,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 14151,
+            "name": "smithsonite ore",
+            "price": 1210,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 13750,
+            "name": "sphalerite",
+            "price": 1990,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5378,
+            "name": "spruce lumber",
+            "price": 2670,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 7022,
+            "name": "steel joint plate",
+            "price": 1490,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 7019,
+            "name": "steel nails",
+            "price": 260,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5232,
+            "name": "stiperstone",
+            "price": 120,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 16908,
+            "name": "tempered glass",
+            "price": 13600,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5190,
+            "name": "topaz",
+            "price": 6650,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5379,
+            "name": "treated spruce lumber",
+            "price": 10250,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 19962,
+            "name": "triphane",
+            "price": 600,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 7017,
+            "name": "varnish",
+            "price": 1910,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 5163,
+            "name": "violet quartz",
+            "price": 60,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 12224,
+            "name": "vivianite",
+            "price": 290,
+            "lastUpdate": "20231005-235848",
+            "acquisition": ""
+        },
+        {
+            "id": 7607,
+            "name": "wolfram ingot",
+            "price": 5640,
+            "lastUpdate": "20231005-235848",
             "acquisition": ""
         }
     ]
