@@ -1,4 +1,5 @@
 import json
+import logging
 import apiUniversalis as api
 version = 'v2'
 """

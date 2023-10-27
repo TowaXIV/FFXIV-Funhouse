@@ -1,15 +1,13 @@
 #%% Modules
 # official modules
 import json
+import logging
 import os
 import pandas as pd
 from datetime import datetime
-
-# custom scripts
-from accessFile import CSVClass, JSONClass
-import apiUniversalis as api
-from itempropertydatabase import ItemDatabase
-
+import logging
+import logging.config
+# for custom modules, see below logging boot
 #%%     Global Constants
 
 # Database identifier
@@ -37,6 +35,22 @@ os.mkdir(gRootDir)
 global gPricesDir
 gPricesDir = f"{gRootDir}\\_universalis-prices"
 os.mkdir(gPricesDir)
+
+# Logging boot
+LOG_CONFIG = json.load(open('config/logging/logging.conf', 'r'))
+LOG_CONFIG['handlers']['file']['filename'] = f'{gRootDir}/logfile.log'
+
+logging.config.dictConfig(LOG_CONFIG)
+
+logger = logging.getLogger(__name__)
+
+logger.info(f'Running {__file__}.')
+logger.info(f'Logger configured using logging.conf in .../config/logging.')
+
+# custom modules
+from accessFile import CSVClass, JSONClass
+import apiUniversalis as api
+from itempropertydatabase import ItemDatabase
 
 #%%     Functions
 def getPrices(item,id):
@@ -89,14 +103,17 @@ def updatePrices(entries, database): # fetch prices for objects using Universali
         json.dump(database, f, indent=4)
     return database
 
-
 #%%     Load in pricing & itemID list
 def main():
+    logger.info('Start function "main".')
+    logger.info(f'data directory set as {dataDir}.')
     # ItemProperties
     itemProps = JSONClass(os.path.join(dataDir,gItemProperties)).readjson()
+    logger.info(f'Successfully read data in from Item Properties: "{gItemProperties}".')
+    logger.info('Saving backup to local database.')
     saveItemProps(itemProps) #save backup in local database
     itemProps = itemProps["data"] #strip to only data
-    print(itemProps["version"])
+    logger.debug('Stripping dirpath metadata from data. Should not do this.')
 
     # Pricing spreadsheet
     pricingData = CSVClass(os.path.join(dataDir,gPricingData)).readcsv()
@@ -118,7 +135,7 @@ def main():
     lItemsWithoutID = lItems.copy() # copy list for local processing
     lItemsToProcess = listRemoveDuplicates(lItemsWithoutID,lItemsWithID)
 
-    print(f"New items to include in databse: {lItemsToProcess}")
+    logger.info(f"New items to include in databse: {lItemsToProcess}")
     if len(lItemsToProcess) > 0: # check if all items have ID, skip if True
         os.mkdir(f"{gRootDir}\\_newItemID")
         for x in lItemsToProcess:
@@ -154,4 +171,5 @@ def main():
 
 #%%     Main
 if __name__ == "__main__":
+    logger.debug('Module ran as __main__.')
     main()
